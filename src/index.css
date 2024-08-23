@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0000ff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5252ff;
+}
+
+#logo {
+  animation-name: logo_animation;
+  animation-duration: 0.2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+
+@keyframes logo_animation {
+  0% {
+    margin-top: -20px;
+    opacity: 0;
+    background-color: rgb(211, 211, 255);
+  }
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+p,
+small {
+  text-wrap: pretty;
+}
+
+#girl-book-image {
+  animation-name: girl_book;
+  animation-duration: 2.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes girl_book {
+  0% {
+    transform: translateY(0px);
+    box-shadow: 0px 15px 20px -10px rgb(244, 244, 255);
+  }
+
+  50% {
+    transform: translateY(10px);
+    box-shadow: 0px 15px 20px -10px rgb(216, 215, 255);
+  }
+
+  100% {
+    transform: translateY(0px);
+    box-shadow: 0px 15px 20px -10px rgb(244, 244, 255);
+  }
+}
